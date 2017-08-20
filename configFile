@@ -1,0 +1,34 @@
+# With SMTP
+IP1=IPorDNSnameOfNode1
+IP2=IPorDNSnameOfNode2
+IP3=IPorDNSnameOfNode3
+IP4=IPorDNSnameOfNode4
+IP5=IPorDNSnameOfNode5
+HOSTIP=$(hostname -i)
+ADMIN_EMAIL=opdk@google.com
+APIGEE_ADMINPW=Secret123
+LICENSE_FILE=/tmp/license.txt
+MSIP=$IP1
+USE_LDAP_REMOTE_HOST=n
+LDAP_TYPE=1
+APIGEE_LDAPPW=secret
+BIND_ON_ALL_INTERFACES=y
+MP_POD=gateway
+REGION=dc-1
+ZK_HOSTS="$IP1 $IP2 $IP3"
+ZK_CLIENT_HOSTS="$IP1 $IP2 $IP3"
+# Must use IP addresses for CASS_HOSTS, not DNS names.
+CASS_HOSTS="$IP1 $IP2 $IP3"
+# Default is postgres
+PG_PWD=postgres
+PG_MASTER=$IP4
+PG_STANDBY=$IP5
+SKIP_SMTP=n
+SMTPHOST=smtp.example.com
+SMTPUSER=smtp@example.com
+# omit for no username
+SMTPPASSWORD=smtppwd
+# omit for no password 
+SMTPSSL=n
+SMTPPORT=25
+SMTPMAILFROM="My Company <myco@company.com>"

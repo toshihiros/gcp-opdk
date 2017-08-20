@@ -1,0 +1,39 @@
+# Datacenter 2
+IP1=IPorDNSnameOfNode1
+IP2=IPorDNSnameOfNode2
+IP3=IPorDNSnameOfNode3
+IP6=IPorDNSnameOfNode6
+IP7=IPorDNSnameOfNode7
+IP8=IPorDNSnameOfNode8
+IP9=IPorDNSnameOfNode9 
+IP12=IPorDNSnameOfNode12
+HOSTIP=$(hostname -i)
+MSIP=$IP7
+ADMIN_EMAIL=opdk@google.com
+APIGEE_ADMINPW=Secret123
+LICENSE_FILE=/tmp/license.txt
+USE_LDAP_REMOTE_HOST=n
+LDAP_TYPE=2
+LDAP_SID=2
+LDAP_PEER=$IP1
+APIGEE_LDAPPW=secret
+BIND_ON_ALL_INTERFACES=y
+MP_POD=gateway-2
+REGION=dc-2
+ZK_HOSTS="$IP1 $IP2 $IP3 $IP7 $IP8 $IP9:observer"
+ZK_CLIENT_HOSTS="$IP7 $IP8 $IP9"
+# Must use IP addresses for CASS_HOSTS, not DNS names.
+CASS_HOSTS="$IP7:2,1 $IP8:2,1 $IP9:2,1 $IP1:1,1 $IP2:1,1 $IP3:1,1"
+# Default is postgres
+PG_PWD=postgres
+PG_MASTER=$IP6
+PG_STANDBY=$IP12
+SKIP_SMTP=n
+SMTPHOST=smtp.example.com
+SMTPUSER=smtp@example.com 
+# omit for no username
+SMTPPASSWORD=smtppwd   
+# omit for no password
+SMTPSSL=n
+SMTPPORT=25
+SMTPMAILFROM="My Company <myco@company.com>"
