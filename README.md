@@ -9,9 +9,9 @@ This README describes how to run the scripts for the install/manage of Edge Priv
 
 ### How do I get set up? ###
 
-The scripts ***setup5h.sh***  and ***setup12h.sh*** to setup Apigee Edge Private Cloud version 16.x and 17.x respectively.
+The scripts ***setup5h.sh***  and ***setup12h.sh*** to setup Apigee Edge Private Cloud with 5-host and 12-host profiles  respectively as described on Install-Configuration Guide.
 
-##[1] Installation 
+## [1] Installation
 
 ### Preparation
 - First you need to setup GCP account and prepare it as to run wiht gcloud commands on the terminal of Mac, Linux or Bash on Windows.
@@ -43,7 +43,7 @@ The usage example of this script is:
 
 *./setup12h.sh edge-1705 4.17.05 {user} {password}*
 
-##[2] Stop/Restart/Remove all the Edge components on GCE instances
+## [2] Stop/Restart/Remove all the Edge components on GCE instances
 
 Command: ***state.sh***
 
