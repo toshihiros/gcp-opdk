@@ -4,7 +4,7 @@ This README describes how to run the scripts for the install/manage of Edge Priv
 
 ### What is this repository for? ###
 
-* Installing OPDK 17.x/16.x on GCP instances 
+* Installing OPDK 4.17.x/4.16.x on GCP instances 
 * ver. 0.1
 
 ### How do I get set up? ###
