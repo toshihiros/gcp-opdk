@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# arg1: instnace name: ex. edge-1705
+# arg2: number of the instances according to the profile: ex. 5 
+# arg3: state of the GCE instances changed to: ex. stop/restart/remove
+
 inst=$1
 echo $int
 
